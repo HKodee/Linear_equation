@@ -31,7 +31,7 @@ class Linear:
         return "{}x + {}y = {}".format(multix_co, multiy_co, multi_constant)
     
     def __solve__(self,other):
-        determinant = self.co_x*other.co_x - self.co_y*other.co_x
+        determinant = self.co_x*other.co_y - self.co_y*other.co_x
 
         if determinant == 0:
             if (self.constant*other.co_y -other.constant*self.co_y) == 0:
